@@ -1,16 +1,9 @@
-#include <iostream>
-using namespace std;
+#include <bits/stdc++.h>
+}using namespace std;
 
 
 
 int main(){
-
-//----------------------------------------------------------/	
-	#ifndef ONLINE_JUDGE
-		freopen("input.txt", "r", stdin);
-		freopen("output.txt" , "w", stdout);
-	#endif
-//----------------------------------------------------------/
 
 	int n;
 	cin>>n;
@@ -18,4 +11,3 @@ int main(){
 	cout<<"Hello World"<<n;
 
 	return 0;
-}
