@@ -1,6 +1,29 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+struct cust{
+        int quan;
+        std::vector<string> ingr;
+};
+
+// int simulator (struct cust vlike[], struct cust vdislike[], set<string> final, int n){
+//     int i, count=0,h=0;
+
+//     for (i=0; i<n; i++){
+
+//         for (int j=0 ; j<vdislike[i].quan; j++){
+//             for (auto s:final){
+//                 if (s == vdislike[i].ingr[j])
+//                     h++;
+//             }
+//             if (h == vdislike[i].quan )
+//                 count++;
+//         }
+//     }
+    
+//     return abs(n-count);
+// }
+
 int main(){
     // int customer;
     // cin>>customer;
@@ -44,10 +67,7 @@ int main(){
 
     //vector<pair<int, string>> vlike(customer), vdislike(customer);
 
-    struct cust{
-        int quan;
-        std::vector<string> ingr;
-    } vlike[customer], vdislike[customer];
+    cust vlike[customer], vdislike[customer];
 
 
     while(i<customer){
@@ -180,6 +200,8 @@ int main(){
     cout<<final.size()<<" ";
     for (auto i:final)
         cout<<i<<" ";
+
+   //cout<<simulator(vlike, vdislike, final, customer);
 
     return 0;
 }
