@@ -1,14 +1,37 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+struct cust{
+		int quan;
+		std::vector<string> ingr;
+	};
 
-int simulator (cust vlike[], cust vdislike[], set final){
-	for (0->customer)
-		final.ele != vdislike[x].ignr[i]
-		c++;
+// int simulator (struct cust vlike[],struct cust vdislike[], set<string> final){
+// // //-------------------------------------------------------------//
+// // 	#ifndef ONLINE_JUDGE
+// // 		freopen("input.txt", "r", stdin);
+// // 		freopen("outputRES.txt", "w", stdout);
+// // 	#endif
+// // //-------------------------------------------------------------//
+// // 	int count=0;
+// // 	int customer;
+// // 	cin>>customer;
+// 	int r=0; 
+// 	int countop=0, op=0;
+// 	for (auto i:final){
+// 		op=0;
+// 		for (auto it:vdislike[r].ingr){
+// 			if (it == i){
+// 				op=1;
+// 				break;
+// 			}
+// 		}
+// 		r++;
+// 		if (op == 0)	countop++;
+// 	}
 
-	return c;
-}
+// 	return countop;
+// }
 
 
 int main(){
@@ -29,10 +52,7 @@ int main(){
 
 	//vector<pair<int, string>> vlike(customer), vdislike(customer);
 
-	struct cust{
-		int quan;
-		std::vector<string> ingr;
-	} vlike[customer], vdislike[customer];
+	 cust vlike[customer], vdislike[customer];
 
 
 	while(i<customer){
@@ -157,38 +177,40 @@ int main(){
 			}
 		}
 
-		if (vdislike[x].quan == 2){
-			for (auto i:final){
-				if (i != vdislike[x].ingr[0] && i != vdislike[x].ingr[1]){
-					for (auto j:vlike[x].ingr)
-						final.insert(j);
-					}
-				}
+		// if (vdislike[x].quan == 2){
+		// 	for (auto i:final){
+		// 		if (i != vdislike[x].ingr[0] && i != vdislike[x].ingr[1]){
+		// 			for (auto j:vlike[x].ingr)
+		// 				final.insert(j);
+		// 			}
+		// 		}
 				
-			}	
-		if (vdislike[x].quan == 3){
-			for (auto i:final){
-				if (i != vdislike[x].ingr[0] && i != vdislike[x].ingr[1] && i != vdislike[x].ingr[2]){
-					for (auto j:vlike[x].ingr)
-						final.insert(j);
-					}
-				}
+		// 	}	
+		// if (vdislike[x].quan == 3){
+		// 	for (auto i:final){
+		// 		if (i != vdislike[x].ingr[0] && i != vdislike[x].ingr[1] && i != vdislike[x].ingr[2]){
+		// 			for (auto j:vlike[x].ingr)
+		// 				final.insert(j);
+		// 			}
+		// 		}
 				
-			}
-		if (vdislike[x].quan == 4){
-			for (auto i:final){
-				if (i != vdislike[x].ingr[0] && i != vdislike[x].ingr[1] && i != vdislike[x].ingr[2] && i != vdislike[x].ingr[3]){
-					for (auto j:vlike[x].ingr)
-						final.insert(j);
-					}
-				}
+		// 	}
+		// if (vdislike[x].quan == 4){
+		// 	for (auto i:final){
+		// 		if (i != vdislike[x].ingr[0] && i != vdislike[x].ingr[1] && i != vdislike[x].ingr[2] && i != vdislike[x].ingr[3]){
+		// 			for (auto j:vlike[x].ingr)
+		// 				final.insert(j);
+		// 			}
+		// 		}
 				
-			}	
+		// 	}	
 	}
 
 	cout<<final.size()<<" ";
 	for (auto i:final)
 		cout<<i<<" ";
+
+	//cout<<simulator(vlike,vdislike,final);
 
 	return 0;
 }

@@ -71,19 +71,81 @@ int main(){
 	// 	}
 	// 	cout<<count<<endl;
 	// }
+		// int n;
+		// cin>>n;
 
-	int t;
-	cin>>t;
+		// unsigned long long int a[n];
 
-	while(t--){
-		int n;
-		cin>>n;
+		// for (int i=0; i<n; i++)	cin>>a[i];
 
-		unsigned long long int a[n];
+		// for (int i=0; i<n-1; i++){
+		// 	for (int j=0; j<n; j++){
+		// 		if ((a[j]&a[j+1]) == 0){
 
-		for (int i=0; i<n; i++)	cin>>a[i];
+		// 		}
+		// 	}
+		// }
 
-		 
-	}
+	// int t;
+	// cin>>t;
+
+	// while(t--){
+	// 	set<int> arr,b;
+
+	// 	int n,m;
+	// 	cin>>n>>m;
+
+	// 	int sum=0;
+
+	// 	for (int i=0; i<n; i++){
+	// 		int x;
+	// 		cin>>x;
+	// 		arr.insert(x);
+	// 	}
+
+
+
+	// int t;
+	// cin>>t;
+
+	// while(t--){
+	// 	int n,count=0;
+	// 	cin>>n;
+		
+	// 	std::vector<int> v;
+
+	// 	for (int i=0; i<n; i++){
+	// 		int x;
+	// 		cin>>x;
+	// 		v.push_back(x);
+	// 	}		
+
+	// 	//sort(v.begin(), v.end());
+
+	// 	for (int i=0; i<n; i++){
+	// 		for (int j=n-1; j>1; j--){
+	// 			if (v[i] & v[j] == 0){
+	// 				continue;
+	// 			}
+	// 			else {
+	// 				if(v[i] > v[j]){
+	// 					swap(v[i],v[j]);
+	// 					count++;
+	// 				}
+	// 				else{
+	// 					continue;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// 	if (count != 0){
+	// 		cout<<"YES"<<endl;
+	// 	}
+	// 	else {
+	// 		cout<<"NO"<<endl;
+	// 	}
+	// }
+
+	//}
 	return 0;
 }

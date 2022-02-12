@@ -51,9 +51,9 @@ int main(){
 	//Wrong answers.
 
 	//Think for an approach.
-	
+
 	cout<<likes.size()<<" ";
 	for (it=likes.begin(); it!=likes.end();it++)  
-    cout <<*it<<endl; 
+    cout <<*it<<" "; 
     return 0;
 }
