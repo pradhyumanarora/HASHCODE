@@ -2,6 +2,14 @@
 using namespace std;
 
 
+int simulator (cust vlike[], cust vdislike[], set final){
+	for (0->customer)
+		final.ele != vdislike[x].ignr[i]
+		c++;
+
+	return c;
+}
+
 
 int main(){
 //-------------------------------------------------------------//
@@ -151,7 +159,7 @@ int main(){
 
 		if (vdislike[x].quan == 2){
 			for (auto i:final){
-				if (i != vdislike[x].ingr[0] || i != vdislike[x].ingr[1]){
+				if (i != vdislike[x].ingr[0] && i != vdislike[x].ingr[1]){
 					for (auto j:vlike[x].ingr)
 						final.insert(j);
 					}
@@ -160,22 +168,22 @@ int main(){
 			}	
 		if (vdislike[x].quan == 3){
 			for (auto i:final){
-				if (i != vdislike[x].ingr[0] || i != vdislike[x].ingr[1] || i != vdislike[x].ingr[2]){
+				if (i != vdislike[x].ingr[0] && i != vdislike[x].ingr[1] && i != vdislike[x].ingr[2]){
 					for (auto j:vlike[x].ingr)
 						final.insert(j);
 					}
 				}
 				
 			}
-		// if (vdislike[x].quan == 4){
-		// 	for (auto i:final){
-		// 		if (i != vdislike[x].ingr[0] || i != vdislike[x].ingr[1] || i != vdislike[x].ingr[2] || i != vdislike[x].ingr[3]){
-		// 			for (auto j:vlike[x].ingr)
-		// 				final.insert(j);
-		// 			}
-		// 		}
+		if (vdislike[x].quan == 4){
+			for (auto i:final){
+				if (i != vdislike[x].ingr[0] && i != vdislike[x].ingr[1] && i != vdislike[x].ingr[2] && i != vdislike[x].ingr[3]){
+					for (auto j:vlike[x].ingr)
+						final.insert(j);
+					}
+				}
 				
-		// 	}	
+			}	
 	}
 
 	cout<<final.size()<<" ";

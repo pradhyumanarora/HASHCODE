@@ -13,7 +13,15 @@
 #include <set>
 
 using namespace std;
+
 int main(){
+//-------------------------------------------------------------//
+	#ifndef ONLINE_JUDGE
+		freopen("input.txt", "r", stdin);
+		freopen("output.txt", "w", stdout);
+	#endif
+//-------------------------------------------------------------//
+
 	int c;
 	cin>>c;
 
@@ -38,6 +46,12 @@ int main(){
 		}
 	}
 
+
+	// This code is broken, B,C,D,and E test cases failed
+	//Wrong answers.
+
+	//Think for an approach.
+	
 	cout<<likes.size()<<" ";
 	for (it=likes.begin(); it!=likes.end();it++)  
     cout <<*it<<endl; 
